@@ -1,0 +1,31 @@
+
+package labClass;
+
+import java.util.Scanner; 
+
+public class MadLibGame 
+
+{
+	public static void main(String[] args)
+	{
+		Scanner scanner = new Scanner(System.in);
+		
+		String adj1,adj2,adj3,noun;
+		
+		System.out.print("Enter an adjective : ");
+		adj1 = scanner.nextLine();
+		System.out.print("Enter a noun : ");
+		noun  = scanner.nextLine();
+		System.out.print("Enter an adjective : ");
+		adj2 = scanner.nextLine();
+		System.out.print("Enter an adjective : ");
+		adj3 = scanner.nextLine();
+		
+		System.out.println("Today I had a " + adj1 + " day!!");
+	    System.out.print("I met " + noun + "!!! ");
+	    System.out.print("I was very " + adj2 + ".");
+	    System.out.print(" But " + noun + " was " + adj3 + " for some reason.");
+	   
+	    scanner.close();
+	}
+}
