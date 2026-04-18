@@ -1,0 +1,24 @@
+package labClass;
+import java.util.Scanner;
+
+public class labClass2 {
+   public static void main(String[] args)
+   {
+	   int a;
+	   float f = 3.2323f;
+	   String s = "Hello World";
+	   
+	   Scanner input = new Scanner(System.in);
+	   
+	  
+	   System.out.println("Enter an integer value = ");
+	   a = input.nextInt();     // variable name of Scanner object
+	   
+	   
+	   System.out.println("Enter a floating-point value = ");
+	   f = input.nextFloat();
+	   
+	   System.out.println("Integer value = " + a);
+	 
+   }
+}
