@@ -1,0 +1,48 @@
+
+package labClass;
+
+import java.util.Scanner;
+public class JavaLab {
+
+	public static void main (String[] args)
+	{
+
+int n;
+    boolean r = true;
+    System.out.println("Enter number between 1 to 10 (You have 3 guesses)");
+	int random = (int)(Math.random()*10);
+	
+	for(int i=0;i<3;i++)
+	{
+		if(i==0) System.out.print("First try = ");
+		if(i==1) System.out.print("Second try = ");
+		if(i==2) System.out.print("Third try = ");
+		Scanner UserInput = new Scanner(System.in);
+		n = UserInput.nextInt();
+		if(n==random)
+		{
+			System.out.println("You've WON!!!");
+			r = false;
+			break;
+		}
+		else if(n>random)
+		{
+			System.out.println("Your number is too big ");
+			
+			continue;
+		}
+		else if(n<random)
+		{
+			System.out.println("Your number is too small ");
+			continue;
+			
+		}
+			
+	}
+	
+	System.out.println("The random number was " + random);
+	if(r)
+		System.out.println("You've lost!!!");
+	
+}
+}
